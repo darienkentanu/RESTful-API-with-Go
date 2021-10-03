@@ -12,7 +12,7 @@ func main() {
 	e.GET("/users", c.GetUsersController)
 	e.POST("/users", c.CreateUserController)
 	e.GET("/users/:id", c.GetUserController)
-	e.POST("/users/:id", c.UpdateUserControllers)
+	e.PUT("/users/:id", c.UpdateUserControllers)
 	e.DELETE("/users/:id", c.DeleteUserController)
 	// start the server, and log if it fails
 	e.Logger.Fatal(e.Start(":8080"))
